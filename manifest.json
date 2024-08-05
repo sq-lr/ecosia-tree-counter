@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Ecosia Tree Counter",
+    "version": "1.0",
+    "description": "Displays the number of trees planted by Ecosia on the Ecosia homepage.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.ecosia.org/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "icons": {
+      "16": "icons/icon16.png",
+      "32": "images/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+  }
+}
