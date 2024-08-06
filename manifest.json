@@ -1,23 +1,38 @@
 {
-    "manifest_version": 3,
-    "name": "Ecosia Tree Counter",
-    "version": "1.0",
-    "description": "Displays the number of trees planted by Ecosia on the Ecosia homepage.",
-    "permissions": [
-      "activeTab",
-      "storage"
-    ],
-    "content_scripts": [
-      {
-        "matches": ["https://www.ecosia.org/*"],
-        "js": ["content.js"],
-        "css": ["styles.css"]
-      }
-    ],
-    "icons": {
-      "16": "icons/icon16.png",
-      "32": "images/icon32.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+  "manifest_version": 3,
+  "name": "Ecosia Tree Counter",
+  "version": "1.0",
+  "description": "Displays the number of trees planted by Ecosia.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.ecosia.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/icon16.png",
+        "icons/icon32.png",
+        "icons/icon48.png",
+        "icons/icon128.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }
