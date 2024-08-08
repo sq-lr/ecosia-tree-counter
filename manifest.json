@@ -4,7 +4,6 @@
   "version": "1.0",
   "description": "Displays the number of trees planted by Ecosia.",
   "permissions": [
-    "activeTab",
     "storage",
     "webNavigation"
   ],
