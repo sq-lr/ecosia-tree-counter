@@ -1,0 +1,22 @@
+#tree-counter-button {
+  display: inline-block;
+  height: 40px;
+  padding: 0px 15px 0px 15px;
+  margin-right: 10px;
+  border-radius: 50px;
+  font-family: Arial, sans-serif;
+}
+
+#progress-container {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 3px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}

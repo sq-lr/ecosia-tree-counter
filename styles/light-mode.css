@@ -1,0 +1,16 @@
+#tree-counter-button.light-mode {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+#tree-counter-button.light-mode:hover {
+  background: #deded9;
+}
+
+#tree-counter-button.light-mode #progress-container {
+  background-color: #f0f0eb;
+}
+
+#tree-counter-button.light-mode #progress-bar {
+  background-color: #008009;
+}
