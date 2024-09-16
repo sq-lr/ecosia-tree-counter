@@ -1,5 +1,5 @@
 function insertCounterButton() {
-  const imageUrl = chrome.runtime.getURL('icons/icon32.png');
+  const imageUrl = chrome.runtime.getURL('icons/icon-32.png');
 
   const button = document.createElement('div');
   button.id = 'tree-counter-button';

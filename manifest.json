@@ -28,18 +28,18 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "icons/icon16.png",
-        "icons/icon32.png",
-        "icons/icon48.png",
-        "icons/icon128.png"
+        "images/icon-16.png",
+        "images/icon-32.png",
+        "images/icon-48.png",
+        "images/icon-128.png"
       ],
       "matches": ["<all_urls>"]
     }
   ],
   "icons": {
-    "16": "icons/icon16.png",
-    "32": "icons/icon32.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
   }
 }
