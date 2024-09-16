@@ -2,16 +2,27 @@
   "manifest_version": 3,
   "name": "Ecosia Tree Counter",
   "version": "1.0",
-  "description": "Displays the number of trees planted by Ecosia.",
+  "description": "Displays the average number of trees planted by Ecosia based on your search count.",
   "permissions": [
-    "storage",
-    "webNavigation"
+    "cookies"
+  ],
+  "host_permissions": [
+    "*://www.ecosia.org/*"
   ],
   "content_scripts": [
     {
-      "matches": ["https://www.ecosia.org/*"],
-      "js": ["content.js"],
-      "css": ["styles.css"]
+      "matches": ["*://www.ecosia.org/*"],
+      "js": [
+        "scripts/dom.js",
+        "scripts/counter.js",
+        "scripts/style.js",
+        "scripts/content.js"
+      ],
+      "css": [
+        "styles/general.css",
+        "styles/light-mode.css",
+        "styles/dark-mode.css"
+      ]
     }
   ],
   "web_accessible_resources": [
@@ -25,9 +36,6 @@
       "matches": ["<all_urls>"]
     }
   ],
-  "background": {
-    "service_worker": "background.js"
-  },
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
