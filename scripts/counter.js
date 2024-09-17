@@ -13,7 +13,7 @@ function initializeCounter(callback) {
 function extractSearchCountFromCookie(cookieValue) {
   const searchCount = cookieValue[15].split(':')[0];
 
-  return (parseInt(searchCount, 10) * 2) || 0;
+  return parseInt(searchCount, 10) || 0;
 }
 
 function getECFGField(cookieValue, fieldName) {

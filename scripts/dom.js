@@ -35,6 +35,7 @@ function insertCounterButton() {
           <li>
             <span class="popover-data-text">Search counter:</span>
             <span id="search-counter-text">0</span>
+            <span>(ad present)</span>
           </li>
         </ul>
       </li>
