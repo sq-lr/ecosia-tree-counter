@@ -7,10 +7,31 @@
   background: #333333;
 }
 
+#tree-counter-button.dark-mode:active {
+  background: #6c6c6c;
+}
+
 #tree-counter-button.dark-mode #progress-container {
   background-color: #555;
 }
 
 #tree-counter-button.dark-mode #progress-bar {
   background-color: #5dd25e;
+}
+
+#tree-counter-popover.dark-mode {
+  background-color: #333333;
+  color: #f0f0f0;
+}
+
+#tree-counter-popover.dark-mode .popover-section-text {
+  color: #deded9;
+}
+
+#tree-counter-popover.dark-mode .divider-bottom {
+  border-bottom: solid 1px #4c4c4c;
+}
+
+#tree-counter-popover.dark-mode .popover-data-text {
+  color: #5dd25e;
 }
