@@ -6,7 +6,7 @@ function initializeCounter(callback) {
     const treeCount = Math.floor(searchCount / 45);
     const progressPercentage = ((searchCount % 45) / 45) * 100;
 
-    callback(treeCount, progressPercentage);
+    callback(treeCount, searchCount, progressPercentage);
   }
 }
 
