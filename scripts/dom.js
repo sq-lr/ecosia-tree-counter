@@ -107,5 +107,5 @@ function togglePopover(popover, shouldShow) {
 function positionPopover(button, popover) {
   const buttonRect = button.getBoundingClientRect();
   popover.style.top = `${(buttonRect.bottom + 12) + window.scrollY}px`;
-  popover.style.left = `${(buttonRect.left - 169) + window.scrollX}px`;
+  popover.style.left = `${(buttonRect.left - 178) + window.scrollX}px`;
 }
