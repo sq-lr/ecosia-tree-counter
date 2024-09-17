@@ -7,10 +7,31 @@
   background: #deded9;
 }
 
+#tree-counter-button.light-mode:active {
+  background: #bebeb9;
+}
+
 #tree-counter-button.light-mode #progress-container {
   background-color: #f0f0eb;
 }
 
 #tree-counter-button.light-mode #progress-bar {
   background-color: #008009;
+}
+
+#tree-counter-popover.light-mode {
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+#tree-counter-popover.light-mode .popover-section-text {
+  color: #6c6c6c;
+}
+
+#tree-counter-popover.light-mode .divider-bottom {
+  border-bottom: solid 1px #deded9;
+}
+
+#tree-counter-popover.light-mode .popover-data-text {
+  color: #008009;
 }

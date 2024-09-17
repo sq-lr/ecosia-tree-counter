@@ -6,14 +6,14 @@ function initializeCounter(callback) {
     const treeCount = Math.floor(searchCount / 45);
     const progressPercentage = ((searchCount % 45) / 45) * 100;
 
-    callback(treeCount, progressPercentage);
+    callback(treeCount, searchCount, progressPercentage);
   }
 }
 
 function extractSearchCountFromCookie(cookieValue) {
   const searchCount = cookieValue[15].split(':')[0];
 
-  return (parseInt(searchCount, 10) * 2) || 0;
+  return parseInt(searchCount, 10) || 0;
 }
 
 function getECFGField(cookieValue, fieldName) {
